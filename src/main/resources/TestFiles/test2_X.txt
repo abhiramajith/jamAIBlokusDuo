@@ -1,0 +1,28 @@
+Mario
+Jason
+I1 p 4 9
+I1 p 9 4
+I2 r r p 3 11
+I2 r r p 8 6
+I3 r p 0 12
+I3 r r p 7 9
+I4 r p 3 13
+I4 r r p 8 13
+I5 r r p 2 9
+I5 r p 9 9
+V3 r p 5 11
+V3 r r p 10 7
+L4 r r p 6 8
+L4 r p 11 5
+Z4 r p 4 5
+Z4 r p 6 4
+O4 r p 0 4
+O4 r p 4 3
+L5 r p 0 10
+L5 r p 3 7
+T5 r p 6 2
+T5 r r r p 2 2
+V5 r r p 11 3
+N r p 13 2
+T4 p 4 0
+Y f p 9 0

@@ -1,0 +1,29 @@
+Mario
+Luigi
+F r r r p 10 3
+U r r p 5 10
+U f r p 7 1
+X r r r p 2 12
+T4 r r r p 8 6
+V3 f r r p 2 8
+V5 f r r r p 5 5
+I2 r r r p 1 10
+Y r r r p 13 2
+Z5 f p 7 12
+X f r p 9 9
+O4 f p 1 5
+P r r r p 10 5
+N f r p 7 8
+Z5 p 3 1
+Z4 r r p 2 4
+W r p 12 7
+I5 r r r p 13 13
+V3 f p 12 10
+L4 p 0 0
+I3 f r r r p 12 0
+T4 p 4 6
+I2 f r r r p 11 12
+F f p 7 4
+I1 f r r r p 5 0
+I3 f p 9 5
+I1 p 0 13

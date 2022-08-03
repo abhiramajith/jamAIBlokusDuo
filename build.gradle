@@ -1,0 +1,90 @@
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id "org.sonarqube" version "3.3"
+}
+
+group 'org.ucd'
+version '1.0-SNAPSHOT'
+
+ext {
+    gdxVersion = '1.10.0'
+    roboVMVersion = '2.3.12'
+    box2DLightsVersion = '1.5'
+    ashleyVersion = '1.7.3'
+    aiVersion = '1.8.2'
+    gdxControllersVersion = '2.1.0'
+    typingLabelVersion = "1.2.0"
+    lwjglVersion = "3.3.0"
+
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    gradlePluginPortal()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url 'https://jitpack.io'}
+    google()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    api "com.badlogicgames.gdx:gdx:$gdxVersion"
+    api "org.lwjgl:lwjgl:${lwjglVersion}:natives-macos-arm64"
+    api "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+    api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+    api "org.lwjgl:lwjgl:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-assimp:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-bgfx:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-glfw:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-libdivide:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-llvm:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-lmdb:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-lz4:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-meow:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-meshoptimizer:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-nanovg:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-nfd:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-nuklear:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-openal:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-opengl:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-opengles:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-opus:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-par:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-meow:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-remotery:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-rpmalloc:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-shaderc:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-spvc:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-stb:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-tinyexr:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-tinyfd:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-vma:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-vulkan:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-xxhash:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-yoga:${lwjglVersion}:natives-macos-arm64"
+    api "org.lwjgl:lwjgl-zstd:${lwjglVersion}:natives-macos-arm64"
+    api "com.github.raeleus.TenPatch:tenpatch:5.2.2"
+    api "com.rafaskoberg.gdx:typing-label:1.2.0"
+    api "org.mini2Dx:universal-tween-engine:6.3.3"
+    api"com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+    api 'com.github.raeleus.stripe:stripe:1.2.0'
+    api 'com.github.raeleus.stripe:freetype:1.1.0'
+    api "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'GameMain'
+        )
+    }
+}

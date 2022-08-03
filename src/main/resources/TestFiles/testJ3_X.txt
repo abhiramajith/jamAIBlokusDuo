@@ -1,0 +1,26 @@
+Bob
+theBuilder
+N r r r p 4 8
+F f r p 8 3
+I3 f r r r p 8 9
+Z4 f p 5 2
+P r p 11 10
+T4 r r p 3 5
+L5 p 0 7
+L4 f p 2 1
+X r p 5 12
+V3 f r r r p 11 5
+W f r r p 2 12
+X f r p 12 7
+U p 6 5
+P p 8 7
+I2 f r p 12 11
+Y p 4 0
+Y f p 10 12
+L5 r r r p 12 0
+I1 p 1 10
+I2 f r p 6 8
+W f r p 9 1
+U f r r p 0 5
+Z5 p 6 10
+I1 p 0 0
